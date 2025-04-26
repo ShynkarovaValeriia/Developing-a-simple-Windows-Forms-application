@@ -37,6 +37,9 @@
             this.btnCalculate = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.tbVariant = new System.Windows.Forms.TextBox();
+            this.lblResult = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -60,7 +63,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(31, 144);
+            this.label3.Location = new System.Drawing.Point(31, 202);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(169, 16);
             this.label3.TabIndex = 2;
@@ -70,27 +73,27 @@
             // 
             this.tbX1.Location = new System.Drawing.Point(275, 33);
             this.tbX1.Name = "tbX1";
-            this.tbX1.Size = new System.Drawing.Size(114, 22);
+            this.tbX1.Size = new System.Drawing.Size(132, 22);
             this.tbX1.TabIndex = 3;
             // 
             // tbX2
             // 
             this.tbX2.Location = new System.Drawing.Point(275, 87);
             this.tbX2.Name = "tbX2";
-            this.tbX2.Size = new System.Drawing.Size(114, 22);
+            this.tbX2.Size = new System.Drawing.Size(132, 22);
             this.tbX2.TabIndex = 4;
             // 
             // tbY
             // 
-            this.tbY.Location = new System.Drawing.Point(275, 141);
+            this.tbY.Location = new System.Drawing.Point(275, 199);
             this.tbY.Name = "tbY";
             this.tbY.ReadOnly = true;
-            this.tbY.Size = new System.Drawing.Size(114, 22);
+            this.tbY.Size = new System.Drawing.Size(132, 22);
             this.tbY.TabIndex = 5;
             // 
             // btnCalculate
             // 
-            this.btnCalculate.Location = new System.Drawing.Point(34, 212);
+            this.btnCalculate.Location = new System.Drawing.Point(34, 313);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(96, 27);
             this.btnCalculate.TabIndex = 6;
@@ -100,7 +103,7 @@
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(165, 212);
+            this.btnClear.Location = new System.Drawing.Point(174, 313);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(96, 27);
             this.btnClear.TabIndex = 7;
@@ -110,7 +113,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(293, 212);
+            this.btnExit.Location = new System.Drawing.Point(311, 313);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(96, 27);
             this.btnExit.TabIndex = 8;
@@ -118,11 +121,39 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(31, 146);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(111, 16);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Номер варіанта";
+            // 
+            // tbVariant
+            // 
+            this.tbVariant.Location = new System.Drawing.Point(275, 143);
+            this.tbVariant.Name = "tbVariant";
+            this.tbVariant.Size = new System.Drawing.Size(132, 22);
+            this.tbVariant.TabIndex = 10;
+            // 
+            // lblResult
+            // 
+            this.lblResult.AutoSize = true;
+            this.lblResult.Location = new System.Drawing.Point(31, 251);
+            this.lblResult.Name = "lblResult";
+            this.lblResult.Size = new System.Drawing.Size(11, 16);
+            this.lblResult.TabIndex = 11;
+            this.lblResult.Text = "-";
+            // 
             // fMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(427, 273);
+            this.ClientSize = new System.Drawing.Size(444, 359);
+            this.Controls.Add(this.lblResult);
+            this.Controls.Add(this.tbVariant);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnCalculate);
@@ -152,6 +183,9 @@
         private System.Windows.Forms.Button btnCalculate;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox tbVariant;
+        private System.Windows.Forms.Label lblResult;
     }
 }
 
